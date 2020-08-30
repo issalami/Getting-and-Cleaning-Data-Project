@@ -49,6 +49,7 @@ frequency_Body_GyroscopeJerkMagnitutde-std
 ### Transformations
 The original data source was transfomed as follows:
 1. Merges the training and the test sets to create one data set.
+
 ??????.*subject_train and subject_test into subject
 ??????.*y_train and y_test activity
 ??????.*X_train and X_test into features

@@ -44,6 +44,5 @@ names(required_data) <- gsub("Mag", "Magnitutde", names(required_data))
 names(required_data)
 
 # tidy data set with the average of each variable for each activity and each subject.
-required_data<-data.table(required_data)
-tidy_data <- required_data[,lapply(.SD,mean),by="activity,subject"]
+tidy_data <- aggregate(.~subject + activity, required_data, mean)
 write.table(tidy_data, file="tidy_data.txt", row.name=FALSE, col.names=TRUE)

@@ -49,10 +49,10 @@ frequency_Body_GyroscopeJerkMagnitutde-std
 ### Transformations
 The original data source was transfomed as follows:
 1. Merges the training and the test sets to create one data set.
-??????*subject_train and subject_test into subject
-??????*y_train and y_test activity
-??????*X_train and X_test into features
-??????*subject, activity and features into alldata
+?????? *subject_train and subject_test into subject
+?????? *y_train and y_test activity
+?????? *X_train and X_test into features
+?????? *subject, activity and features into alldata
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 3. Uses descriptive activity names to name the activities in the data set using activity_labels.txt
 4. Appropriately labels the data set with descriptive variable names.
